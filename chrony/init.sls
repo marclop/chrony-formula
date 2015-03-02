@@ -5,4 +5,4 @@ chrony_package:
     - name: chrony
   service.running:
     - name: chronyd
-    - enabled: {{ chrony.enabled }}
+    - enable: {{ chrony.enabled }}
