@@ -2,7 +2,7 @@
 
 chrony_package:
   pkg.installed:
-    name: chrony
+    - name: chrony
   service.running:
-    name: chronyd
-    enabled: {{ chrony.enabled }}
+    - name: chronyd
+    - enabled: {{ chrony.enabled }}
