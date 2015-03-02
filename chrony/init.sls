@@ -1,4 +1,4 @@
-{%- set alias = salt['pillar.get']('chrony') -%}
+{%- set chrony = salt['pillar.get']('chrony') -%}
 
 chrony_package:
   pkg.installed:
